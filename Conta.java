@@ -3,11 +3,9 @@ abstract class Conta implements InterfaceConta{
     public static final int AGENCIA_PADRAO = 1;
     private static int SEQUENTIAL = 1;
 
-
     protected int agencia;
     protected int numero;
     protected double saldo;
-
 
     protected Cliente cliente;
 
@@ -52,7 +50,6 @@ abstract class Conta implements InterfaceConta{
     public double getSaldo() {
         return saldo;
     }
-
 
     protected void imprimirInfosComuns() {
         System.out.println(String.format("Titular: %s", this.cliente.getNome()));
